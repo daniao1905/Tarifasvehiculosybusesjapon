@@ -48,7 +48,7 @@ if origen and destino:
             tipo_vehiculo = st.selectbox("Tipo de vehículo", ["Hiace", "Alphard", "Microbús", "Bus grande"])
 
             if tipo_vehiculo in ["Hiace", "Alphard"]:
-                base_tarifa = 15790
+                base_tarifa = 20,000
                 extra_blocks = 0
 
                 if distance_km > 15:
@@ -61,7 +61,7 @@ if origen and destino:
 
                 total = base_tarifa + extra_cost + retorno_cost
 
-                st.info(f"💴 Tarifa Hiace/Alphard: Base ¥15,790 + Excedente ¥{extra_cost:,} + Retorno ¥3,500")
+                st.info(f"💴 Tarifa Hiace/Alphard: Base ¥20,000 + Excedente ¥{extra_cost:,} + Retorno ¥3,500")
                 st.success(f"🧾 Total estimado: ¥{total:,}")
 
             else:
